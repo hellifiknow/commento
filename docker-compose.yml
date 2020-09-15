@@ -1,8 +1,8 @@
-version: '3'
+version: "3"
 
 services:
   server:
-    image: registry.gitlab.com/commento/commento
+    image: hellifiknow/repothis:commento
     ports:
       - 8080:8080
     environment:
@@ -11,21 +11,21 @@ services:
       COMMENTO_POSTGRES: postgres://postgres:postgres@db:5432/commento?sslmode=disable
     depends_on:
       - db
-    networks:
-      - db_network
+    #networks:
+    #  - db_network
   db:
     image: postgres
     environment:
       POSTGRES_DB: commento
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-    networks:
-      - db_network
+    #networks:
+    #  - db_network
     volumes:
       - postgres_data_volume:/var/lib/postgresql/data
 
-networks:
-  db_network:
+#networks:
+#  db_network:
 
 volumes:
   postgres_data_volume:

@@ -10,3 +10,4 @@ devel.env
 # needlessly bloats the repo size. Discuss here:
 #   https://gitlab.com/commento/commento-ce/issues/74
 vendor
+.DS_Store
