@@ -32,6 +32,6 @@ Then you can just do:
 
 Don't forget to add this to your server-deployment after you have set up your owner user as shown in the commento documentation.
 
-````- name: COMMENTO_FORBID_NEW_OWNERS
-       value: "true"```
-````
+```- name: COMMENTO_FORBID_NEW_OWNERS
+       value: "true"
+```
