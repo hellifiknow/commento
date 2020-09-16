@@ -14,18 +14,18 @@
     font-family: inherit;
     font-size: 15px;
     line-height: 1.5;
-    color: #50596c;
+    // color: #50596c;
     text-rendering: optimizeLegibility;
   }
 
   @import "colors-main.scss";
   @import "commento-common.scss";
-  @import "commento-logged.scss";     // Logged in as <name>
-  @import "commento-mod-tools.scss";  // Moderator tools and buttons
-  @import "commento-input.scss";      // Textarea, anonymous checkbox, submit button
-  @import "commento-card.scss";       // Each comment card
-  @import "commento-login.scss";      // Popup box when logging in
-  @import "commento-footer.scss";     // Powered by Commento
+  @import "commento-logged.scss"; // Logged in as <name>
+  @import "commento-mod-tools.scss"; // Moderator tools and buttons
+  @import "commento-input.scss"; // Textarea, anonymous checkbox, submit button
+  @import "commento-card.scss"; // Each comment card
+  @import "commento-login.scss"; // Popup box when logging in
+  @import "commento-footer.scss"; // Powered by Commento
 
   .commento-hidden {
     display: none;
@@ -85,6 +85,6 @@
 
 .commento-root-font {
   * {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
   }
 }
