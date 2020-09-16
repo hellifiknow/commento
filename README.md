@@ -28,10 +28,13 @@ In the db-deployment.yaml it might be a good idea to modify the POSTGRES_USER an
 
 Then you can just do:
 
-`kubectl apply -f server-service.yaml -f db-deployment.yaml -f postgres-data-volume-persistentvolumeclaim.yaml -f server-deployment.yaml`
+```bash
+kubectl apply -f server-service.yaml -f db-deployment.yaml -f postgres-data-volume-persistentvolumeclaim.yaml -f server-deployment.yaml
+```
 
 Don't forget to add this to your server-deployment after you have set up your owner user as shown in the commento documentation.
 
-`- name: COMMENTO_FORBID_NEW_OWNERS
-       value: "true"
-`
+```json
+- name: COMMENTO_FORBID_NEW_OWNERS
+  value: "true"
+```
